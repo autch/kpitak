@@ -1,0 +1,77 @@
+kpitak.kpi
+==========
+
+TAK, (T)om's lossless (A)udio (K)ompressor 形式を再生する KbMedia Player 
+用プラグインです。対応する拡張子は .tak です。
+
+v1.02 で APE タグの取得に対応しました。
+
+TAK の最新情報および最新の tak_deco_lib.dll は、
+http://www.thbeck.de/Tak/Tak.html （ドイツ語）から入手できます。
+
+
+ライセンス
+----------
+
+このプログラムには、TAK Decoding Library v2.3.0 Final を含んでいます。
+TAK デコードライブラリ tak_deco_lib.dll は、TAK の作者である Thomas 
+Becker 氏が著作権を所有しています。
+
+TAK SDK v2.3.0 Final の著作権表記は以下のとおりです。
+
+> Decoding library for TAK, (T)om's lossless (A)udio (K)ompressor.
+>
+> Version: TAK_DECO_LIB.DLL V2.3.0 / 2013-06-18
+>
+> Copyright 2007 by Thomas Becker, D-49080 Osnabr"uck.
+> All rights reserved.
+
+TAK SDK ライセンスの全文は TAK_Readme.html ファイルをご覧ください。
+
+kpitak.kpi は、その作者である Autch が著作権を保持しています。私が書いた
+部分に関しては zlib/libpng ライセンスとします。kpitak.kpi そのものと、
+kpitak.kpi を生成するために使用したすべてのソースコード（上記 TAK SDK を
+除く）に適用されます。
+
+ライセンスの全文は LICENSE ファイルをご覧ください。
+
+
+ソースコード
+------------
+
+ソースコードは以下の GitHub リポジトリから入手できます。
+	https://github.com/autch/kpitak
+
+Visual Studio 2015 Community でビルドしています。
+
+
+履歴
+----
+
+v0805170315 (256) 2008.05.17 03:15
+
+ * 初版。デバッグビルドのままリリースして大顰蹙orz
+
+v0805171529 (256) 2008.05.17 15.29
+
+ * リリースビルド
+
+v1.0 (256) 2008.05.23 1.54
+
+ * 正式公開初版
+
+v1.1 (257) 2008/10/02 02:45:16
+
+ * シーク先のサンプル位置の計算でオーバーフローしていた。
+   あさってのほうにシークして値を返すので、本体がダミーデコードを
+   繰り返してしまい、結局シークが激遅になっていた。
+
+v1.2 (258) 2015/09/12
+
+ * TAK デコーダライブラリを 2.3.0 Final に更新
+ * タグ情報を取得できるようになった
+
+----
+Autch
+http://www.autch.net/
+https://github.com/autch
